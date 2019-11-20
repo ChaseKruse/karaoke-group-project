@@ -1,0 +1,44 @@
+/* -- General -- */
+html { background-color:#f0f0f0; background-size: cover; background-repeat: no-repeat; height: 100%; font-size:10pt; }
+body {overflow-x:hidden; overflow-y:scroll; width:975px; margin: 10px auto 10px auto; font-family:'Times New Roman'; background-color:#f0f0f0; border-radius:2px; padding:10px; color:black;  }
+input[type=text], select, textarea { font-size:14px; line-height:1.425; color:#555; border:1px solid #ccc; background-color:#fff; padding:1px 6px; height:28px; border-radius:4px;}
+input[type=text]:disabled { background-color:initial; }
+table { border-collapse:collapse; }
+input[type=button] { min-width: 75px; height: 30px; }
+
+/* -- General Formatting -- */
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.InActive { color: #CCCCCC;  }
+.InActive:hover { color: red; background-color:gray;}
+.BodyScheme { height:425px;overflow-x: hidden; overflow-y: scroll; margin:15px 0px 5px 0px; background-color:white; }
+.BorderBottomScheme { border-bottom:1px solid #444; padding-right:18px; margin-top:15px;}
+.Container { padding: 10px; border-radius:4px; background-color:#f0f0f0; width:475px; }
+.FullWidth { width: 100%; }
+.Hover:hover { background-color:#E2E2E2; cursor:pointer; }
+.Modal { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0.3)); z-index:1;}
+.ModalContainer { margin: 20px auto 0px auto; border-radius:4px; background-color:#f0f0f0; width:475px; padding:10px; }
+.TitleScheme { border:1px solid black; border-radius:2px; background-color:#e2e2e2; margin:15px 0px 13px 0px;}
+.TitleContainer { width:600px; margin:25px auto 25px auto; border-bottom:2px solid gray; font-size:initial; }
+
+/* -- General Detail -- */
+.DetailBtn { width: 75px !important; height: 35px !important; }
+.DetailTitle { margin-top: -25px; margin-bottom:25px; padding-left: 10px; color: #666; font-size:18px; }
+.DetailClose { background-color: transparent; border: none; position: relative; top: 94%; left: 94%; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; outline: none; }
+.DetailClose:before { background-color: transparent; cursor: pointer; display: block; padding: 3px; background: 0 0; color: #bbb; content: '\D7'; font-size: 26px; font-weight: 400; line-height: 26px; text-align: center; }
+.MetaData table { margin:10px auto 10px auto; color:gray; border-radius:5px; border:2px solid #E2E2E2; }
+.MetaData td { padding-top:2px !important; padding-bottom:2px !important; }
+.MetaData span { font-style:italic; color:black; font-weight:bolder; }
+
+/* -- Tab Formatting -- */
+.TabScheme { margin-top: 7px; margin-bottom:4px;}
+.TabFormat { cursor:pointer; padding: 2px 5px 5px 5px; margin:2px 3px 0px 3px; border-bottom:1px solid lightgray; color:black; }
+    .TabFormat:hover { color:blue !important; border-bottom:1px solid blue; }
+.TabSelect { padding:5px 7px 8px 7px; border-bottom:2px solid blue !important; position:relative; top:-2px; color:blue !important; font-weight:700 !important; }
+    .TabSelect:hover { color:blue !important; border-bottom:2px solid blue !important; }
+.TabContainer { display:none; border-radius:1px; border:none; background:#f0f0f0; padding: 10px; }
+
+a:link {color: inherit; text-decoration:none;}      /* unvisited link */
+a:visited {color: inherit;text-decoration:none; }   /* visited link */
+a:hover {color: inherit;text-decoration:none;}     /* mouse over link */
+a:active {color: inherit;text-decoration:none;}    /* selected link */
