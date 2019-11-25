@@ -56,7 +56,12 @@
 										FROM
 											song S left outer join
 											songcontributor SC ON S.songid = SC.songid left outer join
-											contributor C ON SC.contributorid = C.contributorid
+											contributor C ON SC.contributorid = C.contributorid AND
+													CASE
+														WHEN :searchfield LIKE "Contributor" THEN C.contributorname
+														ELSE :searchval
+													END
+													LIKE :searchval
 										WHERE
 											CASE
 												WHEN :searchfield LIKE "Artist" THEN songartist
@@ -76,7 +81,7 @@
 							$stmt = $sth->fetchAll();
 							for ($i = 0; $i < count($stmt); $i++) {
 								$row = $stmt[$i];
-								$contributorstr = (isset($row["scrole"]) ? $row["scrole"] . ': ' . $row["contributorname"] . '&#xA;' : '');
+								$contributorstr = (isset($row["contributorname"]) ? $row["scrole"] . ': ' . $row["contributorname"] . '&#xA;' : '');
 								while($i+1 < count($stmt) && $stmt[$i+1]["songid"] == $row["songid"]) {
 									$i++;
 									$row = $stmt[$i];
