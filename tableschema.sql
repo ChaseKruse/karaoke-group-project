@@ -40,6 +40,6 @@ CREATE TABLE queue(
 );
 
 CREATE TABLE user(
-	userid INT,
+	userid INT AUTO_INCREMENT PRIMARY KEY,
 	username VARCHAR(50)
 );
