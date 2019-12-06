@@ -1,0 +1,119 @@
+body {
+	background-image: url("assets/images/body_bg.jfif");
+	width: 100%; 
+	height: 100%; 
+	position: fixed;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+#wrap {
+	width: 70%;
+	height: 800px;
+	background-color: #eee;
+	margin: 0 auto;
+	float: top;
+}
+
+#nav {
+	width: 100%;
+	height: 50px;
+	background-color: #ddd;
+	float: top;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#nav a {
+	width: 100px;
+	height: 25px;
+	background-color: #fff;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 5px;
+	border-radius: 5px;
+}
+
+#nav a:hover {
+	width: 100px;
+	height: 25px;
+	background-color: #FFA07A;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 5px;
+	border-radius: 5px;
+}
+
+#content {
+	width: 90%;
+	height: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-top: 10px;
+	background-color: #ggg;
+	float: top;
+	margin: 0 auto;
+}
+
+#songList {
+	width: 100%;
+	height: 425px;
+	margin-top: 5px;
+	overflow-y: scroll;
+	background-color: #fff;
+}
+
+#songList td, #songList th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#songList tr:nth-child(even){background-color: #f2f2f2;}
+
+#songList tr:hover {background-color: #ddd;}
+
+#songList th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #FFA07A;
+	color: white;
+	position: sticky;
+	top: 0;
+}
+
+#request {
+	margin-top: 35px;
+}
+
+input[type=text], select, textarea, input[type=number] { font-size:14px; line-height:1.425; color:#555; border:1px solid #ccc; background-color:#fff; padding:1px 6px; height:28px; border-radius:4px;}
+input[type=text]:disabled, input[type=number]:disabled { background-color:#F0F0F0; border:1px solid #F0F0F0; }
+table { border-collapse:collapse; }
+input[type=button] { min-width: 75px; height: 30px; }
+
+.Modal { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)); z-index:1;}
+.ModalContainer { margin: 20px auto 0px auto; border-radius:4px; background-color:#f0f0f0; width:475px; padding:10px; }
+
+.AlignRight { text-align: right; }
+.Hover { cursor:pointer; }
+
+.DetailBtn { width: 75px !important; height: 35px !important; }
+.DetailTitle { margin-top: -25px; margin-bottom:25px; padding-left: 10px; color: #666; font-size:18px; }
+.DetailClose { background-color: transparent; border: none; position: relative; top: 94%; left: 94%; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; outline: none; }
+.DetailClose:before { background-color: transparent; cursor: pointer; display: block; padding: 3px; background: 0 0; color: #bbb; content: '\D7'; font-size: 26px; font-weight: 400; line-height: 26px; text-align: center; }

@@ -1,4 +1,5 @@
 <?php
+	$_POST["amountpaid"] = (isset($_POST["amountpaid"]) ? $_POST["amountpaid"] : 0);
 	$conn = new PDO('mysql:host=courses;dbname=z1844922', 'z1844922', '2000Apr01');
 	$query = '
 			INSERT INTO
@@ -22,6 +23,6 @@
 	$sth->bindparam(':amountpaid', $_POST['amountpaid']);
 
 	$sth->execute();
-	header("Location: http:\/\/students.cs.niu.edu/~z1844922/karaoke-group-project/song.php");
+	header("Location: songlist.php");
         exit();
 ?>
